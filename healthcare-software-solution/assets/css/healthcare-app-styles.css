@@ -1,0 +1,1072 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6FCFF;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/*---------------- UTILITES ---------------*/
+p {
+    color: #b3b3b3;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: inline;
+}
+
+section {
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        padding: 60px 0;
+    }
+}
+
+
+/*------------------------ Common CTA Button ----------------------*/
+a.cta-btn {
+    background: #2B98D3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #0864B11A;
+    color: #FFFFFF !important;
+    text-transform: uppercase;
+    border: 1px solid #2B98D3;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 35px !important;
+    margin-top: 15px;
+    display: inline-block;
+    line-height: 1;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+a.cta-btn:hover {
+    background: #fff;
+    color: #007bff !important;
+    -webkit-box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+/*----------------- HEADER ---------------*/
+header {
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    z-index: 5;
+    padding: 0px 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        padding: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand img {
+        width: 145px;
+    }
+}
+
+.navbar-brand img {
+    width: 80%;
+}
+
+header .navbar-brand.absolute {
+    position: absolute;
+}
+
+@media (max-width: 991.98px) {
+    header .navbar-brand.absolute {
+        position: relative;
+    }
+}
+
+header .navbar-brand span {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    header .navbar-brand span {
+        color: #ced4da;
+    }
+}
+
+header .navbar {
+    background: #00121F;
+    padding: 16px;
+}
+
+.navbar a.navbar-brand {
+    margin: auto 0;
+}
+
+header .navbar .cta-btn a {
+    background: inherit 0% 0% no-repeat padding-box;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 15px 35px;
+}
+
+header .navbar .cta-btn a:hover {
+    color: #2b98d3  !important;
+    -webkit-box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+.CTA-Button {
+    margin: auto 0;
+}
+
+@media screen and (max-width: 767px) {
+    header .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand img {
+        width: 75%;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 15px 15px;
+        min-width: 140px;
+    }
+
+}
+
+/*---------------- Banner Section --------------*/
+.banner-section {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner_img.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 74px);
+    width: 100%;
+    text-align: center;
+}
+
+.banner-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 1.56px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.banner-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-section h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .banner-section p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .banner-section h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .banner-section p {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+    }
+}
+
+/* ----------------- healthtech_solutions_healthcare ------------------ */
+.healthtech_solutions_healthcare h2 {
+    color: #00121F;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.47px;
+    text-align: center;
+}
+
+.healthtech_solutions_healthcare .icon-box {
+    background: #EBF8FF;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.healthtech_solutions_healthcare .icon-box img {
+    height: 35px;
+    width: 35px;
+}
+
+.healthtech_solutions_healthcare .icon-content h4.health-tech-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B1D21;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.healthtech_solutions_healthcare .icon-content p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 32px;
+
+}
+
+@media screen and (max-width: 767px) {
+    .healthtech_solutions_healthcare .icon-box {
+        margin: auto;
+    }
+
+    .healthtech_solutions_healthcare h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .chat-gpt-img-box img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .healthtech_solutions_healthcare h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .healthtech_solutions_healthcare .icon-box {
+        height: 65px;
+        width: 65px;
+    }
+
+    .healthtech_solutions_healthcare .icon-box img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .healthtech_solutions_healthcare .icon-content h4.health-tech-title {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .healthtech_solutions_healthcare .icon-content p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+/* ---------------------- Web Mobile App Developments ------------------*/
+.web_mobile_app_development h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.47px;
+    margin-bottom: 15px;
+}
+
+.web_mobile_app_development p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+
+ul.web-mobile-app-ul {
+    padding-left: 20px;
+}
+
+ul.web-mobile-app-ul li {
+    padding: 7px 20px 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+    position: relative;
+}
+
+ul.web-mobile-app-ul li::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: -20px;
+    background-color: #2B98D3;
+    border-radius: 25px;
+    height: 8px;
+    width: 8px;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.web-mobile-app-development-img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .web_mobile_app_development h3 {
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    ul.web-mobile-app-ul {
+        columns: 1;
+        padding-left: 30px;
+    }
+
+    ul.web-mobile-app-ul li {
+        padding: 7px 10px 7px 0;
+    }
+
+    ul.web-mobile-app-ul li::before {
+        top: 14px;
+        left: -20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .web_mobile_app_development h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    section.web_mobile_app_development {
+        padding: 60px 0 20px 0;
+    }
+}
+
+
+/* ------------------------ OUR TRUSTED CLIENTS --------------------- */
+.our_trusted_clients h2 {
+    color: #00121F;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.47px;
+    text-align: center;
+}
+
+.our_trusted_clients .img-box {
+    text-align: center;
+}
+
+.our_trusted_clients .img-box img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .our_trusted_clients h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .our_trusted_clients .img-box img {
+        max-width: 150px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .our_trusted_clients h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .img-box {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* -----------------------CUSTOM HEALTHCARE SOLUTIONS------------------ */
+.custom_software_solution h2 {
+    color: #00121F;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.47px;
+    text-align: center;
+}
+
+.custom_software_solution .icon-box {
+    background: #EBF8FF;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin: auto;
+}
+
+.custom_software_solution .icon-box img {
+    height: 35px;
+    width: 35px;
+}
+
+.custom_software_solution .icon-content h4.health-tech-title {
+    font-size: 22px;
+    line-height: 28px;
+    color: #1B1D21;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.custom_software_solution .icon-content p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .custom_software_solution h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .custom_software_solution h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .custom_software_solution .icon-box {
+        height: 65px;
+        width: 65px;
+    }
+
+    .custom_software_solution .icon-box img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .custom_software_solution .icon-content h4.health-tech-title {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0 !important;
+    }
+
+    .custom_software_solution .icon-content p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+/* --------------------OUR CASE STUDIES--------------- */
+.our_case_studies h2 {
+    color: #00121F;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.47px;
+    text-align: center;
+}
+
+.case_studies_slider {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+}
+
+.case_img_box {
+    position: relative;
+}
+
+.case_img_box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 180px;
+    background-color: #2B98D3;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.main-case-slider img.case_img {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 55px;
+    left: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.main-case-slider .col-md-7 {
+    position: relative;
+}
+
+.main-case-slider h6 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.main-case-slider h5 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #2B98D3;
+    text-align: left;
+}
+
+.main-case-slider p {
+    font-size: 16px;
+    color: #1B1D21;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.main-case-slider .read_more {
+    display: block;
+    /* margin-bottom: 15px; */
+}
+
+.main-case-slider .read_more a {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b98d3;
+    position: relative;
+}
+
+.main-case-slider .read_more:hover a {
+    text-decoration: underline;
+}
+
+.read_more img {
+    margin-left: 8px;
+}
+
+.case_studies_slider .slick-slide {
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 100px;
+    line-height: 2;
+    font-weight: 700;
+    min-height: 450px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #2b98d3;
+}
+
+.slick-dots li button:before {
+    font-size: 9px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #000;
+}
+
+.slick-dots li button:before {
+    color: #2b98d3;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    opacity: 1;
+    color: #5eb1de;
+}
+
+.slick-arrow {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+}
+
+.slick-arrow:before {
+    font-size: 36px;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.main-case-slider ul li {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.main-case-slider ul li::marker {
+    color: #2b98d3;
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .main-case-slider img.case_img {
+        top: 50px;
+        left: 50px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our_case_studies h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .case_studies_slider .slick-slide {
+        padding: unset;
+        min-height: auto;
+    }
+
+    .main-case-slider img.case_img {
+        position: relative;
+        margin-bottom: 30px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .case_img_box::before {
+        display: none;
+    }
+
+    .main-case-slider p {
+        font-size: 16px;
+        min-height: fit-content;
+    }
+
+    .slick-slide img {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+
+    .main-case-slider h6 {
+        font-size: 18px;
+    }
+
+    .main-case-slider h5 {
+        font-size: 24px;
+    }
+
+    .main-case-slider p {
+        font-size: 16px;
+        line-height: 24px;
+        min-height: unset;
+        -webkit-line-clamp: 5;
+    }
+
+    .case_studies_slider .slick-slide {
+        padding: 40px 70px;
+    }
+
+    .main-case-slider .read_more a {
+        font-size: 16px;
+    }
+
+    .main-case-slider img.case_img {
+        top: 25px;
+        left: 25px;
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .our_case_studies h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .main-case-slider h6 {
+        font-size: 20px;
+    }
+
+    .main-case-slider h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .main-case-slider p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+
+/* ----------------SUBSCRIBE TO NEWS LETTER -------------- */
+.subscibe_content {
+    background-color: #00283E;
+    padding: 40px 0 35px 0;
+}
+
+.subscibe_content h5 {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.subscibe_content p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 19px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+}
+
+.subscibe_content .search {
+    width: 80%;
+    position: relative;
+    display: flex;
+}
+
+.subscibe_content .searchTerm {
+    width: 80%;
+    border: 1px solid #26485b;
+    padding: 10px 15px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    background-color: #26485b;
+    color: #ffffff;
+}
+
+.subscibe_content .searchButton {
+    border: 1px solid #2B98D3;
+    background: #2B98D3;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50px;
+    min-width: 150px;
+    position: absolute;
+    right: 0;
+    height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .subscibe_content .search,
+    .subscibe_content .searchTerm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .subscibe_content h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .subscibe_content p {
+        font-size: 12px;
+    }
+}
+
+/* ---------------------FOOTER SECTION------------------- */
+footer {
+    padding: 50px 0 30px 0;
+    background-color: #00283E;
+}
+
+footer h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.36px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        padding: 20px 0 12px 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    footer h6 {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 6px;
+    }
+}
+
+/*---------------- Healthtech Solutions Modal ------------------*/
+#healthcare_contact_form .modal-content {
+    border-radius: 10px;
+}
+
+#healthcare_contact_form .modal-dialog {
+    max-width: 840px;
+    margin: 1.75rem auto;
+}
+
+#healthcare_contact_form .modal-body {
+    padding: 0 10px 0 10px;
+}
+
+#healthcare_contact_form img {
+    max-width: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.profile_bg_img {
+    background: url(../img/Health-Care-Professio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 590px;
+    border-radius: 0 8px 8px 0;
+    background-size: cover;
+}
+
+#healthcare_contact_form h3 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    color: #000000;
+    /* filter: drop-shadow(0 3px 6px rgba(0, 0, 41, 0.5)); */
+}
+
+.row.d-flex.justify-content-center.align-items-center.position-relative {
+    border: 2px solid #2ea5e9;
+    border-radius: 8px;
+    background-color: #2ea5e914;
+}
+
+
+
+#healthcare_contact_form .form-group .form-control:focus {
+    box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+}
+
+#healthcare_contact_form .form-group {
+    margin-bottom: 8px;
+}
+
+#healthcare_contact_form .wpcf7-not-valid-tip {
+    font-size: 12px;
+}
+
+.pop_up_blue_btn {
+    background-color: #2b98d3;
+    border: none;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 8px 50px;
+    text-align: center;
+}
+
+#healthcare_contact_form label.form-label {
+    font-size: 14px;
+    margin-bottom: 0.5px;
+}
+
+.item-4 {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FFF;
+    opacity: 0.8;
+    transition: 0.3s ease-out;
+    top: -13px;
+    right: -13px;
+}
+
+.item-4:before,
+.item-4:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #2b98d3;
+    left: 50%;
+    top: 50%;
+}
+
+.item-4:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.item-4:before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.item-4:hover,
+.item-4:focus {
+    transform: scale(1.15);
+    opacity: 1;
+}
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 767px) {
+    #healthcare_contact_form .modal-dialog {
+        max-width: 550px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #healthcare_contact_form .modal-body {
+        padding: 0 10px 0 10px;
+    }
+
+    .row.d-flex.justify-content-center.align-items-center.position-relative {
+        padding: 15px;
+    }
+
+    #healthcare_contact_form h4 {
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    #healthcare_contact_form h3 {
+        font-size: 24px;
+        line-height: 18px;
+    }
+
+    #healthcare_contact_form .form-group label {
+        font-size: 14px;
+    }
+
+    #healthcare_contact_form .form-group input,
+    #healthcare_contact_form .form-group input::placeholder {
+        font: 14px/1.5 sans-serif;
+    }
+}
+
+
+  @-webkit-keyframes loading {
+    30% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+      transform: rotate(1080deg);
+      /* border-color: #262626; */
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(1080deg);
+      /* border-color: #1c89ff; */
+    }
+  }
+  
+  @keyframes loading {
+    30% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+      transform: rotate(1080deg);
+      border-color: #fff;
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(1080deg);
+      border-color: #fff;
+    }
+  }

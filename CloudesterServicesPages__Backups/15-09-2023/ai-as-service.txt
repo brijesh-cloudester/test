@@ -1,0 +1,475 @@
+<?php
+/*
+ * Template Name: AI as a Service
+ */
+
+get_header('services');
+?>
+<style>
+    .numbering-tile-style{
+        .numbering-tile-list__title{
+            line-height: 28px;
+            font-size: clamp(16px, 4vw, 18px);
+        }
+        .numbering-tile-list__icon{
+            max-width: 100px;
+            margin-right: 26px;
+            margin-top: 16px;
+        }
+        .numbering-tile-list__description {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .numbering-tile-list__description ul li{
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 10px;
+        }
+        .numbering-tile-list__description ul li:before{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            background: #51a9e1;
+            border-radius: 50%;
+            content: "";
+        }
+    }
+    .AITechStack_Section_style{
+        .AITechStackBoxes .AITechStackBoxes__Items{
+            min-height: 250px;
+            padding: 20px;
+        }
+        .AITechStackBoxes__Title h3{
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0px;
+        }
+    }
+    .expertiesInAI__Model .AI_ModelBox__items .iconTitleBox-style h4{
+        font-size: 1.2rem;
+    }
+    .discovering-box-style{
+        .getStarted__items{
+            width: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
+            margin: 0;
+            padding: 20px;
+
+            .getStarted__img{
+                max-width: 70px;
+                margin: auto;
+                padding: 0;
+                margin-bottom: 10px;
+            }
+        }
+        .getStarted__items p{
+            font-size: 1rem;
+            margin: 0;
+        }
+        .getStarted__items h3{
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .numbering-tile-style {
+            .numbering-tile-list__item{
+                max-height: 100%;
+            }
+            .numbering-tile-list__icon{
+                margin: auto;
+                margin-bottom: 10px
+            }
+        }
+    }
+
+</style>
+<?php
+if( have_posts() ): 
+	while( have_posts() ) : the_post();
+        if(!empty(get_field('ai_development_banner_background_color'))) {
+            $background_color = get_field('ai_development_banner_background_color');
+        }
+        else {
+            $background_color = '#1C3350';
+        }
+?>
+        <!-- Main Section -->
+        <main class="main">
+            <!-- Banner Section -->
+            <section class="section banner banner-section mb-4" style="background: <?php echo $background_color; ?>">
+                <div class="container-fluid p-0">
+                    <div class="banner-inner">
+                        <div class="banner_content">
+                            <h1 class="heading-xl mb-4"><?php echo get_field('ai_development_banner_title'); ?></h1>
+                            <div class="container subtitle mb-4"><?php echo get_field('ai_development_banner_content'); ?></div>
+                            <button class="btn btn-cloudester-light btn-inline">
+                                <?php echo get_field('ai_development_banner_link_text'); ?><i class="bx bx-right-arrow-alt"></i>
+                            </button>
+                        </div>
+                        <div class="banner_img">
+                            <?php 
+                            if(!empty(get_field('ai_development_banner_image'))) { 
+                                $image_obj = get_field('ai_development_banner_image');
+                            ?>
+                                <img class="numbering-tile-list__icon" src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Section -->
+            <section class="numbering-tile banner_content__section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center  ">
+                            <?php echo get_field('ai_engineers_content'); ?>
+                            <button class="btn btn-cloudester btn-inline text-capitalize px-5 py-2"><?php echo get_field('ai_engineers_content_link_text'); ?></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Number Counter Section -->
+            <section class="numberCounterSection">
+                <div class="counter_wrapper">
+                    <div class="container">
+                        <div class="row mx-md-5">
+                            <?php
+                            if( have_rows('ai_development_counters') ):
+                                while( have_rows('ai_development_counters') ) : the_row();
+                            ?>
+                                    <div class="col-6 col-md-3">
+                                        <div class="counterBox">
+                                            <h2 class="counterNumber"><span class="timer"><?php echo get_sub_field('ai_development_counter_number'); ?></span><?php echo get_sub_field('ai_development_counter_sign'); ?></h2>
+                                            <p class="counterTitle"><?php echo get_sub_field('ai_development_counter_title'); ?></p>
+                                        </div>
+                                    </div>
+                                    <?php
+						        endwhile;
+					        endif;
+					        ?>
+                        </div>
+                        <div class="row mx-md-5 text-center">
+                            <h2><?php echo get_field('ai_engineers_counter_content'); ?></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AlaaS Offerings Section -->
+            <section class="numbering-tile numbering-tile-style">
+                <div class="container">
+                    <h2 class="numberingTitle text-center mb-4"><?php echo get_field('ai_service_allas_offering_title'); ?></h2>
+                    <ul class="numbering-tile-list mb-4">
+                        <?php
+                        if( have_rows('ai_service_allas_offering_repeater') ):
+                            while( have_rows('ai_service_allas_offering_repeater') ) : the_row();
+                                $image_obj = get_sub_field('ai_service_allas_offering_repeater_image');
+                        ?>
+                                <li class="numbering-tile-list__list-item">
+                                    <div class="numbering-tile-list__item">
+                                        <img class="numbering-tile-list__icon" src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                                        <div class="numbering-tile-list__text">
+                                            <div class="numbering-tile-list__title"><?php echo get_sub_field('ai_service_allas_offering_repeater_title'); ?></div>
+                                            <div class="numbering-tile-list__description"><?php echo get_sub_field('ai_service_allas_offering_repeater_content'); ?></div>
+                                        </div>
+                                    </div>
+                                </li>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </ul>
+                    <div class="getStartedBtn d-flex justify-content-center">
+                        <button class="btn btn-cloudester btn-inline text-capitalize d-none d-md-block px-5 py-2"><?php echo get_field('ai_service_allas_offering_link_button_text'); ?></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Section -->
+            <section class="numbering-tile numbering-tile-style">
+                <div class="container">
+                    <h2 class="numberingTitle text-center mb-4"><?php echo get_field('ai_service_why_choose_title'); ?></h2>
+                    <ul class="numbering-tile-list mb-4">
+                        <?php
+                        if( have_rows('ai_service_why_choose_repeater') ):
+                            while( have_rows('ai_service_why_choose_repeater') ) : the_row();
+                                $image_obj = get_sub_field('ai_service_why_choose_repeater_image');
+                        ?>
+                                <li class="numbering-tile-list__list-item">
+                                    <div class="numbering-tile-list__item">
+                                        <img class="numbering-tile-list__icon" src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                                        <div class="numbering-tile-list__text">
+                                            <div class="numbering-tile-list__title"><?php echo get_sub_field('ai_service_why_choose_repeater_title'); ?></div>
+                                            <div class="numbering-tile-list__description"><?php echo get_sub_field('ai_service_why_choose_repeater_content'); ?></div>
+                                        </div>
+                                    </div>
+                                </li>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </ul>
+                    <div class="getStartedBtn d-flex justify-content-center">
+                        <button class="btn btn-cloudester btn-inline text-capitalize d-none d-md-block px-5 py-2"><?php echo get_field('ai_service_why_choose_link_button_text'); ?></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expertise in AI Models Section -->
+            <section class="expertiesInAI__Model expertiesInAI__Model_style">
+                <div class="container">
+                    <h2 class="numberingTitle text-center mb-4"><?php echo get_field('ai_development_model_expertise_title'); ?></h2>
+                    <div class="AI_ModelBox">
+                        <?php
+                        if( have_rows('ai_development_expertise_models') ):
+                            while( have_rows('ai_development_expertise_models') ) : the_row();
+                                $image_obj = get_sub_field('ai_development_expertise_models_image');
+                        ?>
+                                <div class="row AI_ModelBox__items">
+                                    <div class="col-md-3">
+                                        <div class="iconTitleBox iconTitleBox-style">
+                                            <img src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                                            <h4><?php echo get_sub_field('ai_development_expertise_models_title'); ?><h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="AIModelDescription">
+                                            <?php echo get_sub_field('ai_development_expertise_models_content'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Development Technology Stack -->
+            <section class="AITechStack_Section AITechStack_Section_style">
+                <div class="container">
+                    <h2 class="numberingTitle text-center mb-4"><?php echo get_field('ai_development_technology_title'); ?></h2>
+                    <div class="AITechStackBoxes">
+                        <div class="row mb-4">
+                            <?php
+                            if( have_rows('ai_development_technologies_repeater') ):
+                                while( have_rows('ai_development_technologies_repeater') ) : the_row();
+                            ?>
+                                <div class="col-md-4">
+                                    <div class="AITechStackBoxes__Items">
+                                        <div class="AITechStackBoxes__Title">
+                                            <h3><?php echo get_sub_field('ai_development_technologies_repeater_title'); ?></h3>
+                                        </div>
+                                        <div class="AITechStackBoxes__ImgContainer">
+                                            <?php
+                                            if( have_rows('ai_development_technologies_repeater_images_repeater') ):
+                                                while( have_rows('ai_development_technologies_repeater_images_repeater') ) : the_row();
+                                                    $image_obj = get_sub_field('ai_development_technologies_repeater_image');
+                                            ?>
+                                                    <div class="AITechStackBoxes__ImgItems">
+                                                        <img src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>">
+                                                    </div>
+                                            <?php
+						                        endwhile;
+					                        endif;
+					                        ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php
+						        endwhile;
+					        endif;
+					        ?>
+                        </div>
+                        <div class="getStartedBtn d-flex justify-content-center">
+                            <button class="btn btn-cloudester btn-inline text-capitalize d-none d-md-block px-5 py-2"><?php echo get_field('ai_development_technology_link_button_text'); ?></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Engagement Models -->
+            <section class="numbering-tile numbering-tile-style">
+                <div class="container">
+                    <h2 class="numberingTitle text-center mb-4"><?php echo get_field('ai_development_engagement_title'); ?></h2>
+                    <ul class="numbering-tile-list mb-4">
+                        <?php
+                        if( have_rows('ai_development_engagement_models_repeater') ):
+                            while( have_rows('ai_development_engagement_models_repeater') ) : the_row();
+                                $image_obj = get_sub_field('ai_development_engagement_models_repeater_image');
+                        ?>
+                                <li class="numbering-tile-list__list-item col_4">
+                                    <div class="numbering-tile-list__item">
+                                        <img class="numbering-tile-list__icon imgTop" src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                                        <div class="numbering-tile-list__text">
+                                            <div class="numbering-tile-list__title"><?php echo get_sub_field('ai_development_engagement_models_repeater_title'); ?></div>
+                                            <div class="numbering-tile-list__description paragraph_font16"><?php echo get_sub_field('ai_development_engagement_models_repeater_content'); ?></div>
+                                        </div>
+                                    </div>
+                                </li>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </ul>
+                    <div class="getStartedBtn d-flex justify-content-center">
+                        <button class="btn btn-cloudester btn-inline text-capitalize d-none d-md-block px-5 py-2"><?php echo get_field('ai_development_engagement_link_button_text'); ?></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Discovering Section -->
+            <section class="get_started_today__section">
+                <h2 class="numberingTitle text-center"><?php echo get_field('ai_engineers_discovering_title'); ?></h2>
+                <div class="text-center mb-4"><?php echo get_field('ai_engineers_discovering_content'); ?></div>
+                <div class="container discovering-box-style">
+                    <div class="row">
+                        <?php
+                        if( have_rows('ai_engineers_discovering_repeater') ):
+                            while( have_rows('ai_engineers_discovering_repeater') ) : the_row();
+                                $image_obj = get_sub_field('ai_engineers_discovering_repeater_image');
+                        ?>
+                            <div class="col-lg-4">
+                                <div class="getStarted__items">
+                                    <img class="getStarted__img" src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                                    <h3 class="getStarted__title"><?php echo get_sub_field('ai_engineers_discovering_repeater_title'); ?></h3>
+                                    <p class=""><?php echo get_sub_field('ai_engineers_discovering_repeater_content'); ?></p>
+                                </div>
+                            </div>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GET STARTED TODAY -->
+            <section class="get_started_today__section">
+                <h2 class="numberingTitle text-center mb-4"><?php echo get_field('ai_development_get_started_title'); ?></h2>
+                <div class="container discovering-box-style">
+                    <div class="row">
+                        <?php
+                        if( have_rows('ai_development_get_started_repeater') ):
+                            while( have_rows('ai_development_get_started_repeater') ) : the_row();
+                                $image_obj = get_sub_field('ai_development_get_started_repeater_image');
+                        ?>
+                            <div class="col-lg-3">
+                                 <div class="getStarted__items">
+                                    <img class="getStarted__img" src="<?php echo $image_obj['url']; ?>" alt="<?php echo $image_obj['alt']; ?>" title="<?php echo $image_obj['title']; ?>" />
+                                    <h3 class="getStarted__title"><?php echo get_sub_field('ai_development_get_started_repeater_title'); ?></h3>
+                                    <p class="getStarted__description"><?php echo get_sub_field('ai_development_get_started_repeater_content'); ?></p>
+                                </div>
+                            </div>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT US FORM SECTION -->
+            <section class="contact_us_form__section" id="section-contacts">
+                <div class="container contact-block-inner">
+                    <h2 class="numberingTitle text-uppercase text-center mb-4"><?php echo get_field('ai_development_contact_title'); ?></h2>
+                    <div class="contact-block-text"><?php echo get_field('ai_development_contact_content'); ?></div>
+                    <div class=form__col-row>
+                        <?php echo do_shortcode('[contact-form-7 id="610d3a9" title="AI Services Contact Form"]'); ?>
+                    </div>
+                </div>
+            </section>
+
+             <!-- FAQ Section -->
+             <section class="faq__section">
+                <div class="container">
+                    <div class="faq_title">
+                        <h2 class="numberingTitle text-capitalize text-center mb-4 px-md-5"><?php echo get_field('ai_development_faq_title'); ?></h2>
+                    </div>
+                    <div class="accordion mb-4">
+                        <?php
+                        if( have_rows('ai_development_faq_repeater') ):
+                            while( have_rows('ai_development_faq_repeater') ) : the_row();
+                        ?>
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header">
+                                        <?php echo get_sub_field('ai_development_faq_repeater_question'); ?>
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content">
+                                            <?php echo get_sub_field('ai_development_faq_repeater_question'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                        <?php
+						    endwhile;
+					    endif;
+					    ?>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BLOG SECTION -->
+            <section class="blog__section">
+                <div class="container">
+                    <h2 class="numberingTitle text-uppercase text-center mb-4 px-5">Impressions</h2>
+
+                    <div class="blogMain__container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="blogMain__items">
+                                    <div class="blogMain__imgbox">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog_1.png" alt="blog_1">
+                                    </div>
+                                    <div class="blogMain__description">
+                                        <p>Jan 24, 2022</p>
+                                        <h4>The basis of making the correct system</h4>
+                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled dislike men who are so beguiled.</p><a href="javascript:void(0);" target="_blank">Read more</a>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blogMain__items">
+                                    <div class="blogMain__imgbox">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog_2.png" alt="blog_2">
+                                    </div>
+                                    <div class="blogMain__description">
+                                        <p>Jan 24, 2022</p>
+                                        <h4>The basis of making the correct system</h4>
+                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled dislike men who are so beguiled.</p><a href="javascript:void(0);" target="_blank">Read more</a>
+                                    </div>
+                                </div>                                
+                            </div>      
+                            <div class="col-lg-4">
+                                <div class="blogMain__items">
+                                    <div class="blogMain__imgbox">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog_3.png" alt="blog_3">
+                                    </div>
+                                    <div class="blogMain__description">
+                                        <p>Jan 24, 2022</p>
+                                        <h4>The basis of making the correct system</h4>
+                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled dislike men who are so beguiled.</p><a href="javascript:void(0);" target="_blank">Read more</a>
+                                    </div>
+                                </div>                                
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+<?php
+	endwhile;
+endif;
+?>
+
+<?php
+get_footer('services');
+?>

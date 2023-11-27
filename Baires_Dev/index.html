@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>cloudester - Top Software Development Company</title>
+
+    <meta name="csrf-token" content="">
+
+    <link rel="icon" type="image/x-icon" href="./images/cloudester-logo-blue.ico">
+    <link rel="stylesheet" href="./css/landing_app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form action="" id="landing_long" method="post"
+                    class="form--default__wrapper">
+                    <input type="hidden" name="_token" value=""> <input type="hidden" name="url" id="url" value="" />
+                    <input type="hidden" name="tracking" id="tracking" value="" />
+                    <div class="modal-body p-4">
+                        <h3 class="text-blue-secondary" id="modal-title">Hire the Top Software Development Professionals
+                            in Latin America</h3>
+                        <div class="row py-2">
+                            <div class="col-12 col-md-6 mb-3 mt-3">
+                                <div class="input_wrapper">
+                                    <input type="text" class="form-control first-input-modal" name="name" value=""
+                                         id="name" required>
+                                    <label for="name" class="label-control">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3 mt-3">
+                                <div class="input_wrapper">
+                                    <input type="email" class="form-control" name="email" value=""
+                                     id="email" required>
+                                    <label for="email" class="label-control">Your work email</label>
+                                    <!-- <div class="email_response"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p>How can we help?</p> -->
+                        <textarea id="" name=""
+                            class="form-control col-12" rows="3"
+                            placeholder="What can we do for you?"></textarea>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <span class="spinner d-none">
+                            <img src="./images/wheel-animation.svg" class="img-fluid"
+                                alt="Cloudester" loading="lazy">
+                        </span>
+                        <button type="submit" name="submit-new-landing" class="btn btn-yellow submit-btn">
+                            Let&#039;s get started
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
+
+    <!-- APP -->
+    <div id="app">
+        <!-- NAV BAR -->
+        <nav id="navBar" class="navbar py-3 px-0 fixed-top">
+            <div class="container">
+                <span class="navbar-brand mr-auto">
+                    <img src="./images/cloudester-logo.svg" class="img-fluid"
+                        alt="Cloudester" loading="lazy">
+                </span>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-blue-light btn-cta" id="contact-button"
+                            href="javascript:void(0);"
+                            onclick="goTop();">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END NAV BAR -->
+        <!-- MAIN FEATURED SECTION -->
+        <section id="main_wrapper"
+            class="main_wrapper cloud_main pt-3 pt-md-4 d-flex justify-content-between flex-column">
+            <picture class="main_image_wrapper">
+                <source id="hide_resp" media="(min-width: 1367px)" 
+                srcset="./images/dynamic-bg-new/cloudester_bg_india.jpg">
+                <source media="(min-width: 768px)" srcset="./images/dynamic-bg-new/cloudester_bg_india.jpg">
+                <img src="./images/cloudester-bg-mobile.jpg" alt="cloudester">
+            </picture>
+            <div class="container pb-3 flex-grow-1 d-flex">
+                <div class="row justify-content-between align-items-md-center">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="firm_cover firm_cover_new mb-md-6 text-center text-md-left">
+                            <img src="./images/cloudester-logo.svg" alt="Cloudester" class="mb-sm-4" />
+                        </div>
+
+                        <h1 class="text-white mb-md-4 text-center text-md-left">Top Software Development Company</h1>
+                        <hr class="hr blue_line col-1 col-xs-1 ml-auto ml-md-0 mb-md-5" />
+                        <p class="text-white mb-4 mb-md-5 d-none d-md-block"></p>
+                        <h2 class="text-white mb-4 mb-md-5 text-center text-md-left h2-title">Outsource with us and accelerate your digital transformation</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-xl-8">
+                                <h3 class="text-white mb-5 mb-md-4 d-none d-md-block h3_title_p">
+                                    Our <b>experienced engineering teams</b> deliver <b>dream-team outcomes</b>, without
+                                    the hassles of hiring.&nbsp;</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 d-none d-md-flex">
+                        <!-- FORM LANDING -->
+                        <form action="" id="landing_long" method="post"
+                            class="main_form_wrapper" style="background-color: #e6e7e8E6">
+                            <div id="">
+                                <h2 class="main_form_title text-center mb-1" style="color: #0272b1">
+                                    Hire the Top Software Development Professionals in Latin America
+                                </h2>
+                                <div class="row">
+                                    <div class="col-12 mt-3">
+                                        <div class="input_wrapper">
+                                            <input type="text" class="form-control input_form1"
+                                                name="name" value="" placeholder="Your Name"
+                                                id="name" required
+                                                autofocus>
+                                            <label for="name" class="label-control">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-1 mt-3">
+                                        <div class="input_wrapper">
+                                            <input type="email" class="form-control" name="email"
+                                                value="" placeholder="Your work email"
+                                                onkeyup="this.setAttribute('value', this.value);" id="email" required
+                                                pattern="[aA-z|0-9._%+-]+@[aA-z|0-9.-]+\.[aA-z|]{2,63}$">
+                                            <label for="email" class="label-control">Your work email</label>
+                                            <!-- <div class="email_response"></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <span style="color: #777;font-size: 0.75rem;">How can we help?</span>
+                                <div class="container-fluid px-0 mb-3 ">
+                                    <div class="container-submenu input_wrapper">
+                                        <textarea id="" name=""
+                                            class="form-control col-12" rows="3"
+                                            placeholder="What can we do for you?" required></textarea>
+                                        <!-- <label for="textComments" class="label-control">What can we do for
+                                            you?</label> -->
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <span class="spinner d-none">
+                                        <img src="./images/wheel-animation.svg"
+                                            class="img-fluid" alt="Cloudester" loading="lazy">
+                                    </span>
+                                    <button type="submit" name="submit-new-landing"
+                                        class="btn btn-yellow btn-md btn-rounded-lg submit-btn">
+                                        Jump-start your business
+                                    </button>
+                                </div>
+                        </form>
+                        <!-- END FORM LANDING -->
+                    </div>
+                </div>
+                <a href="javascript:void(0);" data-toggle="modal"
+                    id="CTA_btn_phone" data-target="#modalForm"
+                    class="btn btn-yellow btn-lg btn-rounded-lg d-block d-md-none btn-cta">Jump-start your business</a>
+            </div>
+    </div>
+    <!-- BEGIN STRIPE LOGOS -->
+    <div class="logo_section_inline">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3">
+                    <h3 class="text-center text-lg-left">Trusted by startups and Fortune 500 companies</h3>
+                </div>
+                <div class="col-12 col-lg-9 stripeLogoSplide splide">
+                    <div class="splide__track">
+                        <div class="splide__list d-flex justify-content-around align-items-center">
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/alembic-logo.svg" alt="Alembic" width="120" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/ace-logo.svg" alt="Ace" width="160" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/emotional-ideas-logo.svg" 
+                                    alt="Emotional-Ideas" width="100" >
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/ad2cart-logo.svg" alt="ad2cart" width="120" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/bendyslogo.svg" alt="Bendyslogo" width="160" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/blueswipe-logo.svg" alt="Blueswipe" width="140" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/Discovery_Ed-logo.svg"
+                                    alt="Discovery_Ed" width="100" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle" 
+                                src="./images/OurClients/scituspharma-logo.svg" 
+                                alt="scituspharma" width="100" />
+                            </div>
+                            <div class="logo-item splide__slide text-center px-2 py-1">
+                                <img class="img-fluid align-middle"
+                                    src="./images/OurClients/Terradepth-logo.svg"
+                                    alt="Terradepth" width="150" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="stripeLogo_carrousel" style="visibility: hidden"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END STRIPE LOGOS -->
+    </section>
+    <!-- END MAIN FEATURED SECTION -->
+
+    <!-- END OUR SERVICES SECTION -->
+    <!-- AUGMENTED SECTION -->
+    <section class="content_section_wrapper section_content_wrapper_new pt-5 pb-5 pt-md-8 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-12 mb-4 right-margin">
+                    <h3 class="text-blue-primary mb-3">
+                    </h3>
+
+                    <p class="mb-md-5">
+
+                    </p>
+                    <div class="row mb-md-4">
+                        <div class="col-12 col-md-5">
+                            <h4 class="text-uppercase text-fifth h3">Delivery Team</h4>
+                            <p>An <b>expert autonomous team</b> capable of rapidly and efficiently delivering
+                                technology
+                                solutions and value.</p>
+                        </div>
+                        <div class="col-12 offset-md-1 col-md-6 mt-md-0">
+                            <h4 class="text-uppercase text-fifth h3">Extended Team</h4>
+                            <p>The extra talent needed to boost your projects. Top 1% Engineers <b>fully integrated
+                                    with your team</b>.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="row mb-0 mb-md-5">
+                        <div class="col-12 responsive_img">
+                            <img src="./images/cloudester-img-scalable.png"
+                                class="d-md-none w-50 mb-5 " alt="" />
+                            <a href="javascript:void(0)"
+                                class="btn btn-yellow btn-lg d-block d-md-inline-block btn-cta"
+                                onclick="firstInputFocus('UpgradeYourTeam', event);" data-toggle=modal
+                                data-target=#modalForm>
+                                Upgrade your team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 pr-xl-6 img-container-center">
+                    <img src="./images/cloudester-img-scalable.png"
+                        class="d-none d-md-block img-fluid img_left" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content_section_wrapper section_content_wrapper_new pt-5 pb-5 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 justify-content-center d-none d-md-block img-container-center">
+                    <img src="./images/New Project.svg"
+                        class="img-fluid img__right" alt="" />
+                </div>
+                <div class="col-md-6 col-12 mb-4 left-margin">
+                    <h3 class="text-blue-primary mb-3">We work for the best companies in the world</h3>
+                    <p class="mr-md-6 mb-4">We deliver exceptional technology solutions for world-class businesses in
+                        every industry, <b>from dynamic startups and SMB to Fortune 500 companies</b>.</p>
+                    <ul class="arrow_listing mb-5">
+                        <li class="mr-4">
+                            <h5>91.2% Average Customer Satisfaction</h5>
+                        </li>
+                        <li class="mr-4">
+                            <h5>70.3 Net Promoter Score (90th percentile)</h5>
+                        </li>
+                        <li>
+                            <h5>174 active world-class clients</h5>
+                        </li>
+                    </ul>
+                    <div class="row mb-0 ml-0 ml-md-1 d-block text-center text-md-left">
+                        <a href="javascript:void(0);"
+                            class="btn btn-yellow btn-lg d-block d-md-inline-block btn-cta" +
+                            onclick="firstInputFocus('ConnectWithUs', event);" data-toggle=modal data-target=#modalForm>
+                            Connect with us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainClients_section d-block d-md-none mt-4">
+            <div class="container">
+                <div class="row px-2 py-4 align-items-center">
+                    <div class="col-12">
+                        <div class="row">
+                            <h6 class="top_companies mb-3"><b>Some of the top companies that trust us:</b></h6>
+                        </div>
+                        <div class="row mt-3 MainClientsSplide splide">
+                            <div class="splide__track">
+                                <div class="splide__list d-flex justify-content-around align-items-center">
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/ace-logo.svg"
+                                            alt="ace-logo" width="100" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/ad2cart-logo.svg"
+                                            alt="ad2cart" width="100" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/alembic-logo.svg"
+                                            alt="alembic" width="100" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/bendyslogo.svg"
+                                            alt="bendyslogo" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/blueswipe-logo.svg"
+                                            alt="blueswipe" width="100" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/cbcc-logo.svg"
+                                            alt="cbcc" width="100" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/Discovery_Ed-logo.svg"
+                                            alt="Salesforce" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/emotional-ideas-logo.svg"
+                                            alt="chime" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/labPronto-logo.svg" alt="HP"
+                                            width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/lovelybodies-logo.svg"
+                                            alt="SiriusXM" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/montage-logo.svg"
+                                            alt="Square" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/newarkbottleshop-logo.svg"
+                                            alt="Consumer Affairs" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/owendeutsch-logo.svg"
+                                            alt="Urban Outfitters" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/Pearson_logo.svg"
+                                            alt="Netgear" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/PPHH-Logo.svg" alt="SAP"
+                                            width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/roadrunner_drywall-logo.svg"
+                                            alt="Autodesk" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/scituspharma-logo.svg"
+                                            alt="Ernest Young" width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/Terradepth-logo.svg" alt="IBM"
+                                            width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/wockhardt-logo.svg" alt="Volkswagen"
+                                            width="120" />
+                                    </div>
+                                    <div class="logo-item splide__slide text-center px-2 py-1"><img
+                                            class="img-fluid align-middle"
+                                            src="./images/OurClients/wrapr-logo.svg"
+                                            alt="Groupon" width="120" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="MainClients_carrousel" style="visibility: hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content_section_wrapper section_content_wrapper_new pt-5 pb-5 pt-md-5 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 mb-2 mb-md-4 right-margin">
+                    <h3 class="text-blue-primary mb-3">3 reasons to choose Cloudester
+                    </h3>
+                    <p class="mb-4">Each year, over 1.2 million Software Engineers apply to work with us.
+                        We select only the Top 1% to build solid teams of <b>highly experienced, bilingual engineers</b>
+                        working on your same time zone.</p>
+                    <ol class="numerological_listing mb-md-5 black-font">
+
+                        <li>
+                            <h6>Senior Engineers with 10+ years’ experience</h6>
+                        </li>
+                        <li>
+                            <h6>We hire only the Top 1% of Tech Talent</h6>
+                        </li>
+                        <li>
+                            <h6> Time Zone aligned</h6>
+                        </li>
+
+                    </ol>
+                    <div class="d-none d-md-block">
+                        <a href="javascript:void(0);"
+                            class="btn btn-yellow btn-lg d-block d-md-inline-block btn-cta" +
+                            onclick="firstInputFocus('JumpStart', event);" data-toggle=modal data-target=#modalForm>
+                            Jump-start your business
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 d-none d-md-block pr-xl-6 img-container-center coding_workshop">
+                    <!-- <img src="./images/cloudester_map.svg"class="img-fluid img_left" alt="" /> -->
+                    <img src="./images/Coding workshop.gif" alt="Our Experienced Team">
+                </div>
+            </div>
+            <div class="row mb-0 d-block d-md-none text-center">
+                <a href="javascript:void(0);"
+                    class="btn btn-yellow btn-lg d-block d-md-inline-block btn-cta" +
+                    onclick="firstInputFocus('JumpStart', event);" data-toggle=modal data-target=#modalForm>
+                    Jump-start your business
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Award -->
+    <section class="content_section_wrapper section_content_wrapper_new pt-5 pb-5 pt-md-8 pb-md-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 order-2 order-md-1 px-0 px-md-2">
+                    <div class="splide awards_carrousel_wrap mt-2 mx-auto">
+                        <div class="splide__track">
+                            <ul class="splide__list text-center">
+                                <li class="splide__slide">
+                                    <img class="clutch-logo-slider"
+                                        src="./images/awards/excellence-award.png"
+                                        alt="Best Local excellence-award 2022"/>
+                                    <!-- <h5>Best App Developer Company in India Award 2022</h5> -->
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/ny_nyc_software-development_2022.png"
+                                        alt="Best App developer In USA IT Firms 2022">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top software_developer.png"
+                                        alt="Top Custom Software Development Company" />
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/Top-Software-developer-wadline.svg"
+                                        style="width: 100%; padding: 5px"
+                                        alt="Top Management appointed to the Forbes Technology Council 2022">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-website-development-companies.svg"
+                                        alt="Top Digital marketing Company">
+                                </li>            
+                                <li class="splide__slide">
+                                    <img src="./images/awards/software-developers.png"
+                                        alt="America's fastest-growing companies I 2020">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/techreviewer.png"
+                                        alt="Americas’ Fastest Growing Companies">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/Top-Custom-Software-2021.png"
+                                        alt="Americas’ Fastest Growing Companies">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/techimply-top-software-development-company.png"
+                                        alt="Fastest Growing Company of the Year | 2020">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/Up-city_market-mobile2021.png"
+                                        alt="America's fastest-growing companies I 2020">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/app-development_goodfirms.svg"
+                                        alt="Americas’ Fastest Growing Companies">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-app-development-companie.png"
+                                        alt="Americas’ Fastest Growing Companies">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/app-development-companies.png"
+                                        alt="Best Software Development Company">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/Top-Mobile-Badge.png"
+                                        alt="Americas’ fastest growing private companies 2019">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/appfutura.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-app-development-companies.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-web-development-companies-usa-2022.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-software-development-companies-goodfirms.svg"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/web_developers_wadline.svg"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/e-commerce-devlopment_techimply.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/manifest-badge.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/IT_provider_upciy.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top_market_place.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/it_nyc_managed-service-providers_2022.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/Top-Seo-UPCITY.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/Top-SEO-Company-1.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-digital-marketing-companies-2022.png"
+                                        alt="Top B2B Companies in Latin America">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./images/awards/top-digital-marketing-badge-300x298.png"
+                                        alt="Top B2B Companies in Latin America">                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-0 mb-md-5 order-1 order-md-2 mx-1 mx-md-0 px-3 px-md-2 pl-xl-6">
+                    <h3 class="text-blue-primary mb-3">Awards & Recognitions</h3>
+                    <p class="mb-2 mb-md-5">We’re proud to accept industry accolades for our <b> commitment to
+                            unparalleled results, client service and continuous growth</b>.</p>
+                    <div class="row mb-0 ml-0 ml-md-1 mx-2 d-none d-md-block">
+                        <a href="javascript"
+                            class="btn btn-yellow btn-lg d-block d-md-inline-block btn-cta" +
+                            onclick="firstInputFocus('GetInTouch', event);" data-toggle=modal data-target=#modalForm>
+                            Get in touch
+                        </a>
+                    </div>
+                    <div id="awards_carrousel" style="visibility: hidden"></div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-0 mx-2 mx-md-0 d-block d-md-none text-center">
+                <a href="javascript:void(0);"
+                    class="btn btn-yellow btn-lg d-block d-md-inline-block btn-cta" +
+                    onclick="firstInputFocus('GetInTouch', event);" data-toggle=modal data-target=#modalForm>
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Award -->
+    <!-- END AUGMENTED SECTION -->
+    <!-- TESTIMONIALS SECTION -->
+
+    <section class="testimonials_section bg_gray-light pb-5 pt-5 pt-md-7 pb-md-8">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h3 class="text-blue-primary mb-2 mb-md-6">What our amazing clients say about us</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-0 px-0 px-md-2">
+            <div class="splide testimonials_carrousel-wrap">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Extreme Adz Matt Bsat-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        <strong>
+                                        Aakash and team are awesome! They provide an exceptional service 
+                                        and create top notch products.
+                                        </strong>
+                                        Very reliable and are always on 
+                                        standby to trouble shoot any issues or make changes that may arise. 
+                                        Thank you Aakash and to all the team at Cloudester Software. 
+                                        Highly recommended.
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/lana-shaova.jpg" alt="Matt Bsat"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Matt Bsat</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/extremeadz.svg"
+                                            alt="Extreme Adz" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Extreme Adz Matt Bsat-->
+
+
+                        <!-- Bendy's Kitchen Hardik Bendbar-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        <strong>
+                                            Cloudester Software LLP has successfully delivered a well-functioning system.
+                                        </strong> 
+                                        There have been no issues thus far, and they are in the process of adding more
+                                        features. The team establishes a seamless workflow through clear and transparent communication.
+                                        They are punctual, dedicated, and flexible.
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Hardik Bendbar</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/BendysKitchen.svg"
+                                            alt="Bendy's Kitchen" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Bendy's Kitchen Hardik Bendbar-->
+
+
+                        <!-- My Dot Com Paul Lynch-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        <strong>Absolutely first-class company.</strong>They have worked on several 
+                                        big projects for me and always deliver on time at to the 
+                                        highest standard possible. Highly recommended.
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/adam-isley.jpg" alt="Adam Isley"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Paul Lynch</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/mydotcom.svg" alt="My Dot Com"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End My Dot Com Paul Lynch-->
+
+
+                        <!-- Givenly Mark Mancini-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                    <p>
+                                        <q>
+                                            I've been using <strong>Cloudester as our 
+                                            primary development firm for years
+                                            </strong>.
+                                        </q>
+                                    </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/ropu-rovagnati.jpg"
+                                    alt="Ropu Rovagnati"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Mark Mancini</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/givenly.svg" alt="Givenly"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Givenly Mark Mancini-->
+
+
+                        <!-- JPMcMahon James P. McMahon-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        Their solution is going to give us the ability to manage our 
+                                        operations in real-time. 
+                                        <strong>
+                                            Once implemented, the solution is expected to reduce 
+                                            hands-on management time by 40%. 
+                                        </strong>
+                                        Despite delays not of their own making, Cloudester 
+                                        keeps the project moving (and on budget) 
+                                        through constant communication, 
+                                        providing critical status updates throughout the engagement.
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/viiveek-sankar.jpg"
+                                    alt="Viiveek Sankar"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">James McMahon</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/JPMcMahon.svg"
+                                            alt="JPMcMahon" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End JPMcMahon James P. McMahon-->
+
+
+                        <!-- Alembic-Pharmaceuticals Nilesh Patel-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        Understand requirement - Work for better solution - 
+                                        <strong>Clarity on every aspects - Honesty - Integrity</strong> 
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/patrick-mee.jpg" alt="Patrick Mee"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Dr. Nilesh Patel</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/Alembic-Pharmaceuticals.svg"
+                                            alt="Alembic-Pharmaceuticals" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Alembic-Pharmaceuticals Nilesh Patel-->
+
+
+                        <!-- Alembic-Pharmaceuticals Brijesh Patel-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        Cloudester developed a Volunteer Database Management System for our 
+                                        BA/BE facility at Alembic Pharma, Vadodara. They understood the whole 
+                                        process by extensive interviews with our staff and created 
+                                        the best possible system for us that improved our efficiency and 
+                                        productivity by a lot.
+                                        <strong>They were available for support 24x7 and open to discuss & 
+                                        develop project extension modules. Would recommend their services.
+                                        </strong> 
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/patrick-mee.jpg" alt="Patrick Mee"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Dr. Brijesh Patel</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/Alembic-Pharmaceuticals.svg"
+                                            alt="Alembic-Pharmaceuticals" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Alembic-Pharmaceuticals Brijesh Patel-->
+
+
+                        <!-- Soccer AP David Cook-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        Excellent service.
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/matt-mecham.jpg" alt="Matt Mecham"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">David Cook</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/SoccerAP1.svg"
+                                            alt="Soccer AP" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Soccer AP David Cook-->
+
+
+                        <!-- Cbcc Jignesh Patel-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        Working with Cloudester team is always helpful because, 
+                                        they understand the user's requirement quickly and they 
+                                        also provide valuable input for designing the workflow, 
+                                        user interface, security features and other software 
+                                        function better such that it becomes quicker and easier 
+                                        for the user to operate when the software go live. 
+                                        <strong>
+                                            Cloudester has very expert team, high quality IT tools 
+                                            and solutions to meet all our requirements
+                                        </strong>.
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/mattew-carr.jpg" alt="Matthew Carr"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Dr Jignesh Patel</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/cbcc.svg"
+                                            alt="cbcc" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Cbcc Jignesh Patel-->
+
+
+                        <!-- Sanskruti Pankti shah-->
+                        <li class="splide__slide">
+                            <div class="testimonial_txt">
+                                <p>
+                                    <q>
+                                        I highly recommend Cloudester to anyone looking for developers for 
+                                        their Software or Mobile App project. Working with them was a pleasure..
+                                        Their Business Analyst team was mainly focused on our business goals 
+                                        and ensured proper understanding of our needs. They not only 
+                                        developed our POS software for Sanskruti Salon according to our
+                                        requirements but also provided us with a lot of recommendations 
+                                        and ideas for our marketing and business growth. We have 
+                                        thoroughly enjoyed my experience working with the team. 
+                                        <strong>
+                                        They are a team of professionals and we would continue working with 
+                                        them for future updates.
+                                        </strong>
+                                    </q>
+                                </p>
+                            </div>
+                            <div class="slide__metadata">
+                                <!-- <img class="testimonial_slider_images img-fluid"
+                                    src="./images/julia-kowalik.jpg"
+                                    alt="Julia Kowalik"> -->
+                                <div class="slide__author__wrapper">
+                                    <div class="slider__author">Pankti Shah</div>
+                                    <div class="slider__company">
+                                        <img src="./images/testimonials/sanskrutilogo.svg"
+                                            alt="Sanskruti" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Sanskruti Pankti shah-->
+                    </ul>
+                    <div id="testimonials_carrousel" style="visibility: hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTIMONIALS SECTION -->
+    <!-- SECTION -->
+    <section class="development_section_wrapper bg_dark-blue pb-5 pt-5 pt-md-8 pb-md-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white mb-4 mb-md-5">Ready to move faster with the Top 1% of IT Talent?</h3>
+                    <div class="hr_white w-25 mt-2 mt-md-5 mb-4 mb-md-5 mx-auto d-md-none"></div>
+                    <a href="javascript:void(0);"
+                        class="btn btn-yellow btn-yellow-dark-bg btn-lg d-block d-md-inline-block btn-cta" +
+                        onclick="firstInputFocus('LetsGetStarted', event);" data-toggle=modal data-target=#modalForm>
+                        Jump-start your business
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION -->
+    <!-- FOOTER -->
+    <footer class="footer_section bg_gray-dark pt-5 pb-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="text-center">
+                    <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+                    <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-darkbg="1" data-clutchcompany-id="1769991"></div>
+                    <script type="text/javascript" src="https://s3.amazonaws.com/top-local-agencies/js/upcity_widget.js"></script>
+                    <div class="upcity-widget" data-url="https://upcity.com" data-widget-type="2" data-height="62" data-upcityprofile-id="137963"></div>
+                    <script type="text/javascript" src="https://assets.goodfirms.co/assets/js/widget.min.js"></script>
+                    <div class="goodfirm-widget" data-widget-type="goodfirms-widget-t3" data-widget-pattern="star-basic" data-height="100" data-company-id="76343"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-left mb-4">
+                    <ul class="list-inline text-white mb-0 Copyright_cover">
+                        <li class="list_inline_item"><a href="javascript:void(0);" target="_self" class="text-white">Privacy Policy</a>
+                        </li>
+                        <li class="list_inline_item"> | </li>
+                        <li class="list_inline_item">
+                            <a href="javascript:void(0);" target="_self" class="text-white">Terms of Service</a></li> 
+                        <li class="list_inline_item"> | </li>
+                        <li class="list_inline_item">
+                            <a href="javascript:void(0);" target="_self" class="text-white">Do Not Sell My Personal Information</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="firm_cover text-center text-md-right">
+                        <img src="./images/cloudester-logo.svg" alt="Cloudester" />
+                    </div>
+                </div>
+            </div>
+            <small class="copr_notice">cloudester 2009 – 2022. All rights reserved.</small>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    </div>
+
+    <script src="./js/chat.js"></script>
+    <script src="./js/landing_app.js"></script>
+    <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+    <!-- <script src="./js/jquery.js" ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js.map"></script> -->
+</body>
+
+</html>

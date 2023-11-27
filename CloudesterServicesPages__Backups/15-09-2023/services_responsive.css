@@ -1,0 +1,967 @@
+/* HEADER AND NAVBAR CSS */
+@media only screen and (min-width: 1200px) {
+
+  .numbering-tile-list__item {
+    display: block;
+    min-width: 0;
+  }
+
+  /* ----------------------Engagement Models---------------------- */
+  .col_4 {
+    width: 33.33%;
+    max-width: 33.33%;
+  }
+
+  /* ----------------------GET STARTED TODAY SECTION---------------------- */
+  .getStarted__items {
+    max-width: 265px !important;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  header .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  header .navbar .nav-item .dropdown-menu {
+    margin: 0;
+    top: 43px;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+  }
+
+  header .navbar .nav-item .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    border-bottom: 8px solid #FFF;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -8px;
+    left: 65px;
+  }
+
+  header .navbar .dropdown:hover>.dropdown-menu>li>.dropdown-menu {
+    left: 100%;
+    top: 0 !important;
+  }
+
+  header .navbar .dropdown:hover>.dropdown-menu>li>.dropdown-menu:before {
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #fff;
+    top: 10px;
+    left: -8px;
+    border-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner-image {
+    max-width: 25rem;
+    height: auto;
+    margin-right: 5rem;
+  }
+
+  .numbering-tile-list {
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .numbering-tile-list__list-item {
+    width: 50%;
+    min-width: 0;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+  }
+
+  .numbering-tile-list.__3-col .numbering-tile-list__list-item {
+    width: 33.3333%
+  }
+
+  /* ----------------------GET STARTED TODAY SECTION---------------------- */
+  .getStarted__items {
+    max-width: 220px;
+    min-height: 400px;
+    height: auto;
+  }
+
+  /* ----------------------CONTACT US FORM---------------------- */
+  .form__col-row {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+  }
+
+  .form__col-row .form-group {
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+
+  /* ----------------------AI Development Work Across Industries---------------------- */
+  .icon-accordion .section-accordion-inner {
+    max-width: 1060px;
+  }
+
+  .section-accordion-inner {
+    max-width: 896px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+
+  .et_pb_section div.et_pb_row .et_pb_column .et_pb_module.et-last-child,
+  .et_pb_section div.et_pb_row .et_pb_column .et_pb_module:last-child,
+  .et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module.et-last-child,
+  .et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_column .et_pb_module:last-child,
+  .et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module.et-last-child,
+  .et_pb_section.et_section_specialty div.et_pb_row .et_pb_column .et_pb_row_inner .et_pb_column .et_pb_module:last-child {
+    margin-bottom: 0;
+  }
+
+  .et_pb_gutters3 .et_pb_column_4_4 .et_pb_module,
+  .et_pb_gutters3.et_pb_row .et_pb_column_4_4 .et_pb_module {
+    margin-bottom: 2.75%;
+  }
+
+  .numbering-tile-list__item img {
+    max-width: 100px;
+  }
+
+  /* ----------------------AI MODELS---------------------- */
+
+  .AIModelDescription p,
+  .AI_TechStackTable__Description p {
+    padding: 0 0 0 35px;
+  }
+
+  /* ----------------------AI App development Banner---------------------- */
+  .cld_appDevelopment_banner {
+    padding: 75px;
+    background: url(../img/trusted_partent_banner_first.png);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    background-color: #0053b1;
+    text-align: center;
+  }
+
+  .cld_appDevelopment_banner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 4vw, 40px);
+    font-weight: 700;
+    line-height: 52px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+  .cld_appDevelopment_banner p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    padding: 0 150px;
+    margin-bottom: 30px;
+  }
+
+  /* ----------------------Engagement Models---------------------- */
+  .numbering-tile-list__icon.imgTop {
+    margin-right: 24px;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  img.imgTop {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
+
+
+  /* ---------------AI CONSULTING -- PERSNALISED SERVICES------------ */
+  .consulting-accordian-titles-list {
+    min-width: 250px
+  }
+
+  .consulting-accordian-titles-list__item {
+    text-align: center
+  }
+
+  .consulting-accordian-titles-list__item:after {
+    display: none
+  }
+
+  .consulting-accordian-titles-list__mobile-text {
+    position: absolute;
+    width: 440px;
+    padding: 18px 30px 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 8px 10px rgba(81, 169, 225, .14), 0 3px 14px rgba(81, 169, 225, .12), 0 4px 5px rgba(81, 169, 225, .2)
+  }
+
+  .consulting-accordian-block:first-child .consulting-accordian-titles-list__mobile-text {
+    top: 26px;
+    left: 226px
+  }
+
+  .consulting-accordian-block:nth-child(2) .consulting-accordian-titles-list__mobile-text,
+  .consulting-accordian-block:nth-child(3) .consulting-accordian-titles-list__mobile-text {
+    top: 28px;
+    right: 305px
+  }
+
+  .consulting-accordian-block {
+    max-width: unset
+  }
+
+  .consulting-accordian-block:nth-child(2) .consulting-accordian-titles-list,
+  .consulting-accordian-block:nth-child(3) .consulting-accordian-titles-list {
+    z-index: 4;
+    min-width: 330px
+  }
+
+  .consulting-accordian-heading:after,
+  .consulting-accordian-heading:before {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: ""
+  }
+
+  .consulting-accordian-heading span {
+    position: relative;
+    z-index: 5;
+    display: -ms-flexbox;
+    display: flex;
+    width: 250px;
+    height: 90px;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center
+  }
+
+  .consulting-accordian-wrapper {
+    display: grid;
+    max-width: 1028px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: auto
+  }
+
+  .consulting-accordian-block:first-child {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-self: center;
+    grid-area: 1/1/3/2
+  }
+
+  .consulting-accordian-block:first-child .consulting-accordian-heading::before {
+    top: 50%;
+    left: -50px;
+    width: 50px;
+    height: 12px;
+    margin-top: -13px;
+    background-image: url(https://cloudester.com/wp-content/uploads/2023/09/accordian_step_arrow.svg);
+    background-repeat: no-repeat;
+  }
+
+  .consulting-accordian-block:first-child .consulting-accordian-heading::after {
+    z-index: 2;
+    top: -15px;
+    right: -90px;
+    width: 125px;
+    height: 381px;
+    background-image: url(https://cloudester.com/wp-content/uploads/2023/09/first_child_accordian.svg);
+    background-repeat: no-repeat;
+  }
+
+  .consulting-accordian-block:nth-child(2) {
+    position: relative;
+    z-index: 5;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 685px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-area: 1/2/2/4
+  }
+
+  .consulting-accordian-block:nth-child(2) .consulting-accordian-heading:after {
+    z-index: 2;
+    top: -59px;
+    right: -112px;
+    width: 154px;
+    height: 214px;
+    background-image: url(https://cloudester.com/wp-content/uploads/2023/09/step_one_sub_child.svg);
+    background-repeat: no-repeat;
+  }
+
+  .consulting-accordian-block:nth-child(3) {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 685px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-area: 2/2/3/4
+  }
+
+  .consulting-accordian-block:nth-child(3) .consulting-accordian-heading:after {
+    z-index: 2;
+    top: -95px;
+    right: -104px;
+    width: 138px;
+    height: 283px;
+    background-image: url(https://cloudester.com/wp-content/uploads/2023/09/step_two_sub_child.svg)
+  }
+
+  .consulting-accordian-titles-list__list-item:hover:after {
+    position: absolute;
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    background: url(https://cloudester.com/wp-content/uploads/2023/09/diamond_selector.svg) no-repeat;
+    /* border: 6px solid #c5e9ff; */
+    /* background-color: #92c9ec; */
+    /* border-radius: 50%; */
+    content: ""
+  }
+
+  .consulting-accordian-block:first-child .consulting-accordian-titles-list__list-item:hover::after {
+    top: 16px;
+    right: 10px
+  }
+
+  .consulting-accordian-block:nth-child(2) .consulting-accordian-titles-list__list-item:hover:after,
+  .consulting-accordian-block:nth-child(3) .consulting-accordian-titles-list__list-item:hover:after {
+    top: 16px;
+    left: 11px
+  }
+
+  .consulting-accordian-titles-list__list-item:hover .consulting-accordian-titles-list__mobile-text {
+    z-index: 10;
+    display: block
+  }
+
+
+  /* ----------------------AI Development Work Across Industries---------------------- */
+  .icon-accordion .section-accordion-titles-list {
+    -ms-flex: 2 1 0%;
+    flex: 2 1 0%;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .icon-accordion .section-accordion-texts-list {
+    -ms-flex: 3 1 0%;
+    flex: 3 1 0%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, rgb(36 73 110) 20%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .counterBox .counterTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(18px, 4vw, 20px);
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+
+  .numbering-tile-list__item {
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: inherit
+  }
+
+  .numbering-tile-list__item {
+    padding-right: 24px;
+    padding-left: 24px
+  }
+
+  .numbering-tile-list__icon {
+    margin-right: 26px;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  /* ----------------------WHY CHOOSE SECION---------------------- */
+  .whyChooseCectionList__item {
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 40px 50px;
+    text-align: center;
+  }
+
+  .whyChooseSection__img {
+    margin-right: 56px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* ----------------------AI MODELS---------------------- */
+
+  .AI_ModelBox__items::after,
+  .AI_TechStackTable .AI_TechStackTable__items::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+
+  .AI_ModelBox__items:is(:last-child):after,
+  .AI_TechStackTable .AI_TechStackTable__items:is(:last-child):after {
+    border: none;
+  }
+
+  /* ----------------------AI TECHNOLOGY STACK---------------------- */
+  .AI_TechStackTable__Description p {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* ----------------------AI Development Work Across Industries---------------------- */
+  .icon-accordion .section-accordion-inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .section-accordion-inner {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .section-accordion-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    min-height: 340px;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    padding-bottom: 13px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .section-accordion-titles-list {
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+  }
+
+  .section-accordion-titles-list__list-item {
+    margin-bottom: 0;
+  }
+
+  .section-accordion-titles-list__item {
+    margin-right: 60px;
+  }
+
+  .section-accordion-titles-list__mobile-text {
+    display: none !important;
+  }
+
+  .section-accordion-texts-list {
+    z-index: 2;
+    display: block;
+    overflow: hidden;
+    margin-left: -10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px rgba(81, 169, 225, .14), 0 3px 14px rgba(81, 169, 225, .12), 0 4px 5px rgba(81, 169, 225, .2);
+  }
+
+  .section-accordion-titles-list__item {
+    position: relative;
+    padding: 15px 50px 15px 20px;
+  }
+
+  .section-accordion-titles-list__item h3 {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .numbering-tile {
+    padding-right: 20px;
+    padding-left: 20px
+  }
+}
+
+
+
+@media only screen and (max-width: 1599px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin: 0 20px;
+  }
+
+  header .navbar .nav-item .dropdown-menu {
+    top: 45px !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  header .navbar .navbar-brand img {
+    width: 200px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+    margin: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  header .navbar .nav-item .dropdown-menu {
+    top: 43px !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .top-headbar {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .top-headbar .number {
+    margin-bottom: 5px;
+  }
+
+  header .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  header .navbar .navbar-brand img,
+  header .stickynav .navbar-brand img {
+    width: 180px;
+  }
+
+  .navbar .navbar-toggler {
+    border: 0;
+    box-shadow: none;
+    font-size: 30px;
+    color: #2699dc;
+    padding: 0;
+  }
+
+  .navbar .navbar-toggler:focus {
+    outline: 0;
+  }
+
+  .navbar-nav .nav-item a.nav-link::before {
+    content: inherit;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  header .navbar .nav-item .dropdown-menu {
+    border-radius: 5px;
+  }
+
+  header .navbar .nav-item .dropdown-menu::before {
+    top: 30px;
+    left: 45px;
+  }
+
+  .page-template-social-media-marketing .navbar .navbar-toggler {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  header .navbar {
+    padding-top: 8px;
+  }
+
+  header .navbar.stickynav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .top-headbar {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .numbering-tile-list__item {
+    max-height: 185px;
+  }
+
+  .cld_appDevelopment_banner {
+    height: auto;
+  }
+
+  /* ----------------------AI CONSULTING SERVICES -  DATA SCIENCE---------------------- */
+  .dataScience__ImgBox img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* ----------------------AI Development Work Across Industries---------------------- */
+  .show-mobile {
+    display: block !important
+  }
+
+  .show-desktop {
+    display: none !important
+  }
+}
+
+@media only screen and (max-width:1023px) {
+  .consulting-accordian-titles-list__item.__is-active:after {
+    border-width: 2px 0 0 2px
+  }
+
+  .consulting-accordian-titles-list__item.__is-active~.consulting-accordian-titles-list__mobile-text {
+    display: block
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .numbering-tile-list {
+    display: block
+  }
+
+  .numbering-tile-list__item {
+    height: auto;
+    max-height: 315px;
+  }
+
+  .numbering-tile-list__list-item.col_4 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ai_development_company_banner .banner-inner,
+  .banner-inner {
+    padding: 0 10px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  header .navbar .navbar-brand img,
+  header .stickynav .navbar-brand img {
+    width: 150px;
+  }
+
+  header .navbar .top-headbar {
+    margin-bottom: 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 35px 0 10px;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .footerbottom {
+    margin-top: 20px;
+  }
+
+  .top-headbar .number {
+    font-size: 12px;
+    padding: 0 0 0 15px;
+  }
+
+  .top-headbar .flag img {
+    max-width: 25px;
+  }
+
+  .footer .container {
+    max-width: (100% - 50px);
+  }
+
+  footer ul li {
+    margin: 4px 0;
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #333;
+  }
+
+  footer ul li:last-child {
+    border-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .numbering-tile-list__item img {
+    max-width: 60px;
+  }
+
+  .numbering-tile-list__list-item {
+    padding: 10px;
+  }
+
+  /* ----------------------AI Development Work Across Industries---------------------- */
+
+  .icon-accordion .section-accordion-titles-list__item {
+    border-right: 0;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  .icon-accordion .section-accordion-titles-list__item.__is-active {
+    border-right: 0;
+    border-bottom: 2px solid #51a9e1;
+  }
+
+  .icon-accordion .section-accordion-titles-list__item.__is-active:after {
+    color: #51a9e1;
+    content: "\f34e";
+  }
+
+  .section-accordion-titles-list__item.__is-active:after {
+    color: #fff;
+    content: "\f34e";
+  }
+
+  .section-accordion-titles-list__item:after {
+    display: inline-block;
+    font-family: 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -15px;
+    color: #103654;
+    content: "\f34e";
+    font-size: 30px;
+  }
+
+  /* ----------------------COUNTER SECTION---------------------- */
+  .counterBox {
+    margin-bottom: 20px;
+  }
+
+  .counterBox .counterNumber {
+    line-height: 45px;
+  }
+
+  /* ----------------------WHY CHOOSE SECTION---------------------- */
+  .mainSideImgBox .whyChooseCectionList__item {
+    height: 93%;
+  }
+
+  .whyChooseSection__img {
+    margin: 5px auto 10px !important;
+    max-width: 80px;
+  }
+
+  .whyChooseSection__Text {
+    text-align: center;
+  }
+
+  /* ----------------------WHY CHOOSE CLOUDESTER // TYPE 2---------------------- */
+  .why_choose_cld_three_column .col-lg-4 {
+    margin-bottom: 20px;
+  }
+
+  .why_choose_cld_description h3 {
+    margin-bottom: 10px;
+  }
+
+  /* ----------------------AI MODEL SECTION---------------------- */
+  .iconTitleBox img {
+    max-width: 45px;
+  }
+
+  /* ----------------------AI TECHNOLOGY STACK SECTION---------------------- */
+  .AITechStack_Section .AITechStackBoxes .AITechStackBoxes__Items {
+    margin: 15px auto 15px auto;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .AI_TechStackTable .AI_TechStackTable__items .AI_TechStackTable__title h4 {
+    margin-bottom: 10px;
+  }
+
+  .col-md-12 .AITechStackBoxes__Items .AITechStackBoxes__ImgContainer .AITechStackBoxes__ImgItems {
+    max-width: 100%;
+    width: 33.33%;
+}
+
+  /* ----------------------AI App development Banner---------------------- */
+  .cld_appDevelopment_banner {
+    height: max-content;
+  }
+
+  /* ----------------------GET STARTED TODAY SECTION---------------------- */
+  .getStarted__items {
+    max-width: 250px;
+    height: 100%;
+    min-height: auto;
+    padding: 30px 15px 15px 15px;
+    margin: 10px 10px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 1px 10px rgba(81, 169, 225, .2), 0 4px 5px rgba(81, 169, 225, .12), 0 2px 4px rgba(81, 169, 225, .14);
+    text-align: center;
+  }
+
+  /* ----------------------CONTACT US FORM---------------------- */
+  .form-group,
+  .searchform .form-group,
+  .subscribe-block .form-group {
+    padding-bottom: 5px;
+  }
+
+  /* ----------------------BLOG SECTION---------------------- */
+  .blogMain__items {
+    margin-bottom: 20px;
+  }
+
+  /* ----------------------Data Science Experts---------------------- */
+  .dataScience__ImgBox img {
+    max-width: 90px;
+    height: 90px;
+  }
+
+  /* ||===========================================================||
+  ||===========================================================||
+  ||                     HIRE AI ENGINEERS                     ||
+  ||===========================================================||
+  ||===========================================================|| */
+  .banner_content__section p {  
+    line-height: 20px;
+  }
+  .counter_content p{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 30px 0 0 0;
+}
+}
+
+@media only screen and (max-width: 575px) {
+
+  /* ----------------------GET STARTED TODAY SECTION---------------------- */
+  .getStarted__items {
+    max-width: 100%;
+  }
+}
+
+/* ----------------------FOR HEADER AND FOOTER---------------------- */
+@media only screen and (max-width: 575px) {
+  .hiringblock {
+    padding: 7px 10px;
+  }
+
+  .top-headbar {
+    justify-content: safe;
+  }
+
+  .top-headbar .number {
+    padding: 0;
+    width: 30px !important;
+    height: 30px;
+    border: 1px solid #FFF;
+    border-radius: 24px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 8px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  footer ul li {
+    display: block;
+    border: 0;
+  }
+
+  footer .foot-right-last h6 {
+    justify-content: center;
+  }
+
+  header .navbar .nav-item .dropdown-menu .dropdown-item {
+    font-size: 13px;
+  }
+
+  .menu-item-2511>.dropdown-menu {
+    min-width: 350px;
+  }
+
+  .menu-item-2511>.dropdown-menu li {
+    width: 40%;
+  }
+
+  .footerbottom {
+    text-align: center;
+  }
+}
